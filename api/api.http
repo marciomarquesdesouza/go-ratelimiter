@@ -1,0 +1,24 @@
+# Requisição sem token
+GET http://localhost:8080 HTTP/1.1
+Content-Type: application/json
+-
+###
+
+# Token que permite 7 requisições por segundo
+GET http://localhost:8080 HTTP/1.1
+Content-Type: application/json
+API_KEY: SEVEN_REQUEST_TOKEN
+-
+###
+
+# Token que permite 6 requisições por segundo
+GET http://localhost:8080 HTTP/1.1
+Content-Type: application/json
+API_KEY: SIX_REQUEST_TOKEN
+-
+###
+
+# Token que permite 5 requisições por segundo
+GET http://localhost:8080 HTTP/1.1
+Content-Type: application/json
+API_KEY: FIVE_REQUEST_TOKEN
